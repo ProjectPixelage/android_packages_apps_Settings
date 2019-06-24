@@ -357,4 +357,9 @@
     <!-- Smart 5G -->
     <string name="smart_5g_title">Smart 5G</string>
     <string name="smart_5g_summary">Automatically switch between 5G and 4G to reduce battery consumption</string>
+
+    <!-- Cloudflare DNS Option -->
+    <string name="private_dns_mode_cloudflare" translatable="false">Cloudflare DNS</string>
+    <!-- Cloudflare DNS hostname -->
+    <string name="private_dns_hostname_cloudflare" translatable="false">one.one.one.one</string>
 </resources>
