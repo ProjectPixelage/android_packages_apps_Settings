@@ -169,4 +169,9 @@
     <string name="navbar_category">Navigation bar</string>
     <string name="show_navbar_gesture_bar_title">Gesture indicator</string>
     <string name="show_navbar_gesture_bar_summary">Show gesture indicator at the bottom of the screen</string>
+
+    <!-- Doze on double tap -->
+    <string name="double_tap_title">Double tap</string>
+    <string name="doze_double_tap_title">Double tap to check phone</string>
+    <string name="doze_double_tap_summary">Pulse notifications by a double tap</string>
 </resources>
