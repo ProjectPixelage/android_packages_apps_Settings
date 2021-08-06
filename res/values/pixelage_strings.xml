@@ -104,4 +104,9 @@
     <string name="device_market_name">Market Name</string>
     <string name="platform_revision">Platform</string>
     <string name="total_ram">Total RAM</string>
+
+    <!-- Menu option for not validating the EAP server -->
+    <string name="wifi_do_not_validate_eap_server">Do not validate</string>
+    <!-- Warning message displayed if user choses not to validate the EAP server -->
+    <string name="wifi_do_not_validate_eap_server_warning">No certificate specified. Your connection will not be private.</string>
 </resources>
