@@ -211,6 +211,8 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
+import ink.kscope.settings.wifi.tether.WifiTetherClientManager;
+
 public class SettingsGateway {
 
     /**
@@ -407,6 +409,7 @@ public class SettingsGateway {
             CellularSecuritySettingsFragment.class.getName(),
             AccessibilityHearingAidsFragment.class.getName(),
             HearingDevicePairingFragment.class.getName(),
+            WifiTetherClientManager.class.getName(),
             ZenModesListFragment.class.getName(),
             ZenModeFragment.class.getName(),
             ContactsStorageSettings.class.getName()
