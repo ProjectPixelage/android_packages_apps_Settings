@@ -10,5 +10,12 @@
             android:title="@string/pi_spoof_title"
             android:summary="@string/pi_spoof_summary"
             android:defaultValue="true" />
+
+        <Preference
+            android:key="hide_developer_status_settings"
+            android:title="@string/hide_developer_status_title"
+            android:summary="@string/hide_developer_status_summary"
+            android:fragment="com.android.settings.security.HideDeveloperStatusSettings"
+            settings:controller="com.android.settings.security.HideDeveloperStatusPreferenceController" />
    
 </PreferenceScreen>
