@@ -202,4 +202,7 @@
     <string name="search_apps">Search apps</string>
     <string name="hide_developer_status_title">Hide developer status</string>
     <string name="hide_developer_status_summary">Hide developer status from apps</string>
+
+    <!-- Back haptic feedback -->
+    <string name="back_gesture_haptic_title">Back haptic feedback</string>
 </resources>
