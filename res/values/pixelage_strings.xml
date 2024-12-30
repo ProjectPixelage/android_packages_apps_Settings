@@ -375,4 +375,8 @@
     <string name="private_dns_mode_adguard" translatable="false">AdGuard DNS</string>
     <!-- AdGuard DNS hostname -->
     <string name="private_dns_hostname_adguard" translatable="false">dns.adguard.com</string>
+
+    <!-- Minimum auto brightness --> 
+    <string name="user_min_auto_brightness_title">Minimal auto brightness</string>
+    <string name="user_min_auto_brightness_summary">Caps auto brightness minimum value</string>
 </resources>
