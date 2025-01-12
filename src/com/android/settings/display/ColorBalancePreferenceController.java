@@ -21,16 +21,14 @@ import android.hardware.display.ColorDisplayManager;
 import android.text.TextUtils;
 
 import androidx.preference.PreferenceScreen;
-import androidx.preference.SeekBarPreference;
 
 import com.android.settings.core.SliderPreferenceController;
+import com.android.settings.widget.SeekBarPreference;
 
 public class ColorBalancePreferenceController extends SliderPreferenceController {
 
     private final ColorDisplayManager mColorDisplayManager;
     private final int mChannel;
-
-    private SeekBarPreference mPreference;
 
     public ColorBalancePreferenceController(Context context, String key) {
         super(context, key);
@@ -57,12 +55,11 @@ public class ColorBalancePreferenceController extends SliderPreferenceController
     @Override
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
-        mPreference = screen.findPreference(getPreferenceKey());
-        mPreference.setUpdatesContinuously(true);
-        mPreference.setMax(getMax());
-        mPreference.setMin(getMin());
-        mPreference.setValue(getSliderPosition());
-        mPreference.setSummary(Integer.toString(getSliderPosition()));
+        final SeekBarPreference preference = screen.findPreference(getPreferenceKey());
+        preference.setContinuousUpdates(true);
+        preference.setMax(getMax());
+        preference.setMin(getMin());
+        preference.setProgress(getSliderPosition());
     }
 
     @Override
@@ -72,7 +69,6 @@ public class ColorBalancePreferenceController extends SliderPreferenceController
 
     @Override
     public boolean setSliderPosition(int position) {
-        mPreference.setSummary(Integer.toString(position));
         return mColorDisplayManager.setColorBalanceChannel(mChannel, position);
     }
 
