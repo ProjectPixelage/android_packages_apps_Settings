@@ -75,7 +75,7 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
     static final String ARG_NETWORK_CYCLES = "network_cycles";
     static final String ARG_SELECTED_CYCLE = "selected_cycle";
 
-    private static final String KEY_RESTRICT_ALL = "restrict_all";
+    //private static final String KEY_RESTRICT_ALL = "restrict_all";
     private static final String KEY_RESTRICT_BACKGROUND = "restrict_background";
     private static final String KEY_RESTRICT_CELLULAR = "restrict_cellular";
     private static final String KEY_RESTRICT_VPN = "restrict_vpn";
@@ -153,7 +153,7 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
                 mIcon = uidDetail.icon;
                 mLabel = uidDetail.label;
                 removePreference(KEY_UNRESTRICTED_DATA);
-                removePreference(KEY_RESTRICT_ALL);
+                //removePreference(KEY_RESTRICT_ALL);
                 removePreference(KEY_RESTRICT_BACKGROUND);
                 removePreference(KEY_RESTRICT_CELLULAR);
                 removePreference(KEY_RESTRICT_VPN);
@@ -171,8 +171,8 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
                     }
                     use(AppDataUsageAppSettingsController.class).init(mPackages, userId);
                 }
-                mRestrictAll = findPreference(KEY_RESTRICT_ALL);
-                mRestrictAll.setOnPreferenceChangeListener(this);
+                //mRestrictAll = findPreference(KEY_RESTRICT_ALL);
+                //mRestrictAll.setOnPreferenceChangeListener(this);
                 mRestrictBackground = findPreference(KEY_RESTRICT_BACKGROUND);
                 mRestrictBackground.setOnPreferenceChangeListener(this);
                 mRestrictCellular = findPreference(KEY_RESTRICT_CELLULAR);
@@ -195,7 +195,7 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
             mPackageName = context.getPackageName();
 
             removePreference(KEY_UNRESTRICTED_DATA);
-            removePreference(KEY_RESTRICT_ALL);
+            //removePreference(KEY_RESTRICT_ALL);
             removePreference(KEY_RESTRICT_BACKGROUND);
             removePreference(KEY_RESTRICT_CELLULAR);
             removePreference(KEY_RESTRICT_VPN);
