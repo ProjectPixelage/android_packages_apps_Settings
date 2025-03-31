@@ -10,6 +10,12 @@
             android:title="@string/pi_spoof_title"
             android:summary="@string/pi_spoof_summary"
             android:defaultValue="true" />
+        
+        <com.android.settings.custom.preference.SystemPropertySwitchPreference
+            android:key="persist.sys.pihooks.finsky"
+            android:title="@string/finsky_spoof_title"
+            android:summary="@string/finsky_spoof_summary"
+            android:defaultValue="true" />
 
         <Preference
             android:key="hide_developer_status_settings"
