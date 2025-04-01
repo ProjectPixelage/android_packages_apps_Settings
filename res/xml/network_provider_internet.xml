@@ -147,7 +147,7 @@
         android:defaultValue="false"/>
 
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
-        android:key="qs_footer_data_usage"
+        android:key="qs_show_data_usage"
         android:title="@string/qs_footer_datausage_title"
         android:summary="@string/qs_footer_datausage_summary"
         android:icon="@drawable/ic_settings_data_usage"
