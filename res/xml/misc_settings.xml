@@ -11,6 +11,12 @@
             android:summary="@string/pi_spoof_summary"
             android:defaultValue="true" />
 
+        <com.android.settings.custom.preference.SystemPropertySwitchPreference
+            android:key="persist.sys.pihooks.vending"
+            android:title="@string/pi_vending_title"
+            android:summary="@string/pi_vending_summary"
+            android:defaultValue="false" />
+    
         <Preference
             android:key="hide_developer_status_settings"
             android:title="@string/hide_developer_status_title"

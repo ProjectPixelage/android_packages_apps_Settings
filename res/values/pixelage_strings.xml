@@ -176,6 +176,10 @@
     <string name="pi_spoof_title">Google Play Integrity spoof</string>
     <string name="pi_spoof_summary">Spoof your device as different model for Google Play Integrity</string>
 
+    <!-- Google Play SDK Spoof -->
+    <string name="pi_vending_title">Spoof Google Play Store SDK</string>
+    <string name="pi_vending_summary">Spoof Google Play Store SDK to 32 for Legacy Google Play Integrity</string>
+
     <!-- Volume button music control -->
     <string name="volume_button_music_control_title">Playback control</string>
     <string name="volume_button_music_control_summary">When the screen is off, long-pressing volume keys will skip music tracks</string>
